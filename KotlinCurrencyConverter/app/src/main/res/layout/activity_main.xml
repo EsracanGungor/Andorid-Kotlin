@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="410dp"
+        android:layout_height="497dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btn_get_rates"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_cad"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/text_style"
+            android:padding="24dp"
+            android:text="CAD"
+            android:textAlignment="center"
+            android:textColor="#FFFF"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="105dp"
+            tools:layout_editor_absoluteY="33dp" />
+
+        <TextView
+            android:id="@+id/tv_gbp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/text_style"
+            android:padding="24dp"
+            android:text="GBP"
+            android:textAlignment="center"
+            android:textColor="#FFFF"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="131dp"
+            tools:layout_editor_absoluteY="124dp" />
+
+        <TextView
+            android:id="@+id/tv_chf"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/text_style"
+            android:padding="24dp"
+            android:text="CHF"
+            android:textAlignment="center"
+            android:textColor="#FFFF"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="117dp"
+            tools:layout_editor_absoluteY="206dp" />
+
+        <TextView
+            android:id="@+id/tv_try"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/text_style"
+            android:padding="24dp"
+            android:text="TRY"
+            android:textAlignment="center"
+            android:textColor="#FFFF"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="105dp"
+            tools:layout_editor_absoluteY="347dp" />
+
+        <TextView
+            android:id="@+id/tv_usd"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_style"
+            android:padding="24dp"
+            android:text="USD"
+            android:textAlignment="center"
+            android:textColor="#FFFF"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="105dp"
+            tools:layout_editor_absoluteY="445dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_get_rates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="82dp"
+        android:background="#3477db"
+        android:text="GET RATES"
+        android:onClick="getRates"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
